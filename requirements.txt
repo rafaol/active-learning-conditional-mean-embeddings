@@ -1,0 +1,5 @@
+gpytorch>=1.0.1
+torch>=1.2
+tqdm>=4.42
+pyDOE>=0.3.8
+matplotlib>=3.1
