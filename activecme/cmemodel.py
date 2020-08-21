@@ -33,7 +33,7 @@ class CMEModel(gpytorch.models.GP):
         self.chol_cov_data = None
         self.y_weights = None
         if likelihood is None:
-            self.likelihood = gpytorch.likelihoods.GaussianLikelihood(noise_constraint=GreaterThan(1-10))
+            self.likelihood = gpytorch.likelihoods.GaussianLikelihood(noise_constraint=GreaterThan(1e-10))
         else:
             self.likelihood = likelihood
         self.train_inputs = None
